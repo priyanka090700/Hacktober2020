@@ -1,0 +1,47 @@
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+body,html{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+form{
+  display: flex;
+}
+input{
+  height: 40px;
+}
+input[type="text"]{
+  padding: 0 20px 0 40px;
+  margin-right: 20px;
+  border: 1px solid #333;
+}
+input[type="button"]{
+  background-color: #2196f3;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0 20px;
+  outline: none;
+  cursor: pointer;
+}
+.color{
+  position: relative;
+}
+.preview{
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+  border-radius: 2px;
+}
