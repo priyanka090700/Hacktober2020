@@ -14,7 +14,7 @@ P.S. Star and share this repository, if you had fun!
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/your-usernam/Hacktober2020.git
+git clone https://github.com/your-username/Hacktober2020.git
 cd hacktoberfest2020
 ```
 
