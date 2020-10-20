@@ -15,7 +15,7 @@ P.S. Star and share this repository, if you had fun!
 
 ```terminal
 git clone https://github.com/your-username/Hacktober2020.git
-cd hacktoberfest2020
+cd hacktober2020
 ```
 
 - Create a new branch
