@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+<title>hello wolrd</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style> 
+body{padding:50px;}
+.box{ display:inline-block;
+background: blue;
+width: 200px;
+height: 200px;
+transition: transform 8s cubic-bezier(.52,.52,.85,.43) 0s;
+
+}
+/*.trigger:hover .box{
+    transform :translate(150px,150px)rotate(20deg);
+
+}*/
+.trigger{
+    background: red;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+
+}
+
+ .clicked  {
+    transform :translate(250px,150px);
+
+}
+.flex{
+    display: flex;
+}
+
+
+    </style>                                                                     
+    <script type="text/javascript"> /*
+    function cl(){  
+        document.getElementsByClassName("box")[0].classList.toggle("clicked");               //classname use an array;
+              
+    }*/
+    $(document).ready(function(){
+    $('.trigger').click(function(){
+  $('.box').toggleClass('clicked');
+    });
+    });
+
+    </script>
+    </head>
+     <body>
+         
+         
+<div class="trigger"> <div class="box">hello </div></div>
+   <div class="flex">     
+<div class="line ">|</div>
+<div class="name ">VIPIN</div>
+
+
+</div>
+
+
+
+
+
+
+         <script  type="text/javascript"
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+     </body>
+</html>
