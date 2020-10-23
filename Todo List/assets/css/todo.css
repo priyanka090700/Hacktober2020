@@ -1,0 +1,76 @@
+body{
+    font-family: Roboto;
+    background: #0cebeb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background: #f7f7f7;
+    width: 360px;
+    margin: 100px auto;
+}
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
+.hide{
+    display: none;
+}
+h1{
+    padding: 10px 20px;
+    background: #2980e9;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    background: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+input:focus{
+    background: white;
+    border: 3px solid #2980e9;
+    outline: none;
+}
+input{
+    font-size: 18px;
+    outline: none;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2980e9;
+    border: none;
+}
+.fa-plus-circle{
+    float: right;
+}
+.delete{
+    background: red;
+    width: 10%;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    opacity: 0;
+}
+
+li:hover span{
+        width: 40px;
+        transition: 0.2s linear;
+        opacity: 1;
+}
