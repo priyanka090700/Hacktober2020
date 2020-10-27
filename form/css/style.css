@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(11, 4, 46),rgb(21, 6, 63),rgb(49, 13, 105),rgb(74, 24, 153),rgb(94, 40, 182),rgb(121, 61, 218),rgb(149, 93, 238),rgb(149, 93, 238));
+}
+#container{
+    margin: 42px auto;
+    padding: 20px;
+    max-width: 350px;
+}
+.form-wrap{
+    padding: 20px 25px;
+    margin: auto;
+    background: white;
+    color: #333;
+}
+.form-wrap h1{
+    color:rgb(11, 4, 46);
+    text-align: center;
+    font-size: 35px;
+}
+.form-wrap p{
+    text-align: center;
+}
+label{
+    color: #222;
+    font-size: 15px;
+}
+input, select{
+    width:100%;
+    padding: 5px 2px;
+    border-radius: 3px;
+    border: 1px solid #d1cbcb;
+}
+input:hover,select:hover{
+    border: .5px solid rgb(149, 93, 238);
+}
+.btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(11, 4, 46),rgb(21, 6, 63),rgb(49, 13, 105),rgb(74, 24, 153),rgb(94, 40, 182),rgb(121, 61, 218),rgb(149, 93, 238));
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: rgb(11, 4, 46);
+}
+.bottom-text{
+    font-size: 12px;
+}
+.bottom-text a{
+    text-decoration: none;
+    cursor: none;
+}
