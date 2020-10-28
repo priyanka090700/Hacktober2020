@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: inherit;
+            margin: inherit;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222222;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .card {
+            background: transparent;
+            border: 3px solid #28d7fe;
+            box-shadow: inset 0 0 1vw #1041ff, 0 0 3vw #1041ff, inset 0 0 6vw #1041ff, 0 0 6vw #1041ff, 0 0 .4vw #8bfdfe;
+            border-radius: .5625rem;
+            padding: 30px;
+        }
+
+        .diner {
+            font-size: 72px;
+            font-family: 'Fredoka One', serif;
+            display: block;
+            color: transparent;
+            paint-order: fill stroke markers;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: #fed128;
+            text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .faulty-letter {
+            -webkit-text-stroke-color: #444444;
+            text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: 9999;
+        }
+
+        .welcome {
+            display: block;
+            color: #28d7fe;
+            font-size: 40px;
+            font-family: Pacifico, Parisienne, serif;
+            text-shadow: 0 0 3vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff, 0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe;
+            font-weight: normal;
+        }
+
+        @keyframes blink {
+
+            from,
+            38%,
+            43.25%,
+            49.5%,
+            51.125%,
+            to {
+                -webkit-text-stroke-color: #444444;
+                text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+            }
+
+            38.5%,
+            43%,
+            50%,
+            51% {
+                -webkit-text-stroke-color: #fed128;
+                text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+          <h1 class="diner">
+            DIN<span class="faulty-letter">E</span>IN
+          </h1>
+          <p class="welcome">Welcome!</p>
+        </div>
+      </div>
+</body>
+
+</html>
